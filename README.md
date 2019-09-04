@@ -1,4 +1,4 @@
-# React App - Made with :heart: with Svelte
+# Sample App - Made with :heart: and with Svelte
 
 
 Achivements 
