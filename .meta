@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "packages/shared":"git@github.com:svelte-components/shared.git#0.0.1"
+  }
+}

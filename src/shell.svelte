@@ -1,7 +1,7 @@
 <script>
   /** Imports */
   import { onMount, onDestroy } from "svelte";
-  import Button  from "components/button.svelte";
+  import Button  from "shared/button.svelte";
 </script>
 
 <style>
