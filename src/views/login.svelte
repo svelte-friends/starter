@@ -1,6 +1,5 @@
 <script>
   import { onMount } from "svelte";
-
 </script>
 
 <style>
@@ -13,6 +12,7 @@
 </style>
 
 <h4>Login Form</h4>
+
 <form>
   <div class="group">
     <label for="login-name">Name</label>
@@ -20,7 +20,7 @@
   </div>
   <div class="group">
     <label for="login-password">Password</label>
-    <input id="login-password" name="name" type="password" />
+    <input id="login-password" name="name" type="password" autocomplete="current-password" />
   </div>
 
 </form>
