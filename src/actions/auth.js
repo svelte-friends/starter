@@ -1,10 +1,11 @@
 
-const userRole = "admin";
-
 /** 
+ * Sample Action
  * This action will remove a node based on authentication rules
  * 
  */
+const userRole = "admin";
+
 export function auth(node, roles) {
 
     console.log({ node, roles });
