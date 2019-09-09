@@ -3,12 +3,7 @@
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces",
     "dev": "yarn webpack --mode development --config ./configs/webpack.config.js",
     "prod": "yarn webpack --mode production --config ./configs/webpack.config.js",
     "watch": "yarn dev --watch",
