@@ -23,7 +23,7 @@ Please,  **pay attention**  to the recurse tag, because this is responsible to c
 ### Run the project
 
 After enter inside of the project folder with `cd starter` command, run the `yarn` or `npm install` command.<br/>
-When the process to install dependencies finish, just run the `yarn dev` command to build the project and after this, the `live-server build` command. The project will open automatically on web browser.
+When the process to install dependencies finish, just run the `yarn dev` or `yarn watch` (to watch your changes) command to build the project and after this, the `live-server build` command. The project will open automatically on web browser.
 
 ### Unit Tests
 

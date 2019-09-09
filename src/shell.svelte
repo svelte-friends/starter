@@ -5,7 +5,7 @@
   import Button from "@packages/shared/button.svelte";
 
   import Navbar from "./components/Navbar.svelte";
-  import { Home, About } from './pages';
+  import { Home, About } from "./pages";
 </script>
 
 <style>
@@ -33,7 +33,7 @@
     <Button />
     <div class="container">
       <Route path="/">
-        <Home name={"MyName"} />
+        <Home name={'MyName'} />
       </Route>
       <Route path="/about" component={About} />
     </div>
