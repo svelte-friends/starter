@@ -14,7 +14,8 @@ const config = {
     },
     resolve: {
         alias: {
-            svelte: path.resolve('node_modules', 'svelte')
+            svelte: path.resolve('node_modules', 'svelte'),
+            '@packages': path.resolve(__dirname, '../packages'),
         },
         extensions: ['.mjs', '.js', '.svelte', '.ts', '.js'],
         mainFields: ['svelte', 'browser', 'module', 'main']

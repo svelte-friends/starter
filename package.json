@@ -27,7 +27,6 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "jest-transform-svelte": "^2.0.2",
-    "meta": "^2.2.6",
     "mini-css-extract-plugin": "^0.8.0",
     "style-loader": "^1.0.0",
     "svelte-jest": "^0.3.0",
