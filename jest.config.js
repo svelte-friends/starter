@@ -4,6 +4,7 @@ module.exports = {
 		'^.+\\.svelte$': 'jest-transform-svelte'
 	},
 	moduleFileExtensions: ['js', 'svelte'],
+	Include:"",
 	bail: false,
 	verbose: true,
 	testRegex: "\\.(spec|test).(ts|tsx|js)$",

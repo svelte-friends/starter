@@ -13,31 +13,28 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "svelte": "^3.9.1",
-    "svelte-routing": "^1.4.0"
+    "svelte": "3.12.1",
+    "svelte-routing": "1.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "@testing-library/svelte": "^1.8.0",
+    "@testing-library/svelte": "1.8.0",
     "@types/jest": "^24.0.18",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "24.9.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
     "light-server": "^2.6.3",
     "jest": "^24.9.0",
-    "jest-transform-svelte": "^2.0.2",
+    "jest-transform-svelte": "2.1.0",
     "mini-css-extract-plugin": "^0.8.0",
     "style-loader": "^1.0.0",
-    "svelte-jest": "^0.3.0",
-    "svelte-loader": "^2.13.6",
+    "svelte-jest": "0.3.0",
+    "svelte-loader": "2.13.6",
     "svelte-preprocess": "^3.0.2",
-    "ts-jest": "^24.0.2",
-    "ts-loader": "^6.0.4",
-    "typescript": "^3.5.3",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
   }
