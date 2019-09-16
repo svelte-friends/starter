@@ -4,7 +4,7 @@
   import { onMount, onDestroy } from "svelte";
 
   import Navbar from "./components/Navbar.svelte";
-  import { Home, About } from "./pages";
+  import { Home, About } from "./views";
 
   let title;
   let subtitle;
@@ -12,7 +12,6 @@
 </script>
 
 <style>
-  @import "./reset.css";
 
   :root {
     --var-color-primary: orange;
@@ -21,21 +20,23 @@
   :global(html, body, .shell) {
     height: 100%;
     width: 100%;
+    font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif
   }
   .shell {
     color: aliceblue; /** TODO: remove */
     background: #363636;
   }
+
+    @import "./reset.css";
 </style>
 
 <!-- Simulate a Shell Architecture -->
 <Router>
   <div class="shell">
-    <h1>Svelte App</h1>
     <Navbar />
     <div class="container">
       <Route path="/">
-        <Home name={'MyName'} />
+        <Home name={'Luke'} />
       </Route>
       <Route path="/about" component={About} />
     </div>

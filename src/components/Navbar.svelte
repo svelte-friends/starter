@@ -3,32 +3,35 @@
 </script>
 
 <style>
-  .brand-logo {
-    padding: 0 10px;
+ 
+  .item {
     color: white;
+    padding: 16px;
+    height: 64px;
+    
   }
-  .options {
-    color: white;
-    margin: 40px 0;
-    padding: 0 40px;
+
+  :global(a) {
+    text-decoration: none;
   }
+
   .container {
-    padding: 40px 0;
+    height: 64px;
+    background: gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  .container * {
-    border: 1px solid;
-  }
+ 
 </style>
 
 <nav>
-  <br />
-  <span class="brand-logo">Routing Tutorial</span>
   <div class="container">
-    <Link to="/">
-      <span class="options">Home</span>
+    <Link  to="/">
+      <span class="item">Home</span>
     </Link>
     <Link to="/about">
-      <span class="options">About</span>
+      <span class="item">About</span>
     </Link>
   </div>
 </nav>
