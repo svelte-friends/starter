@@ -4,5 +4,6 @@
  "watchexps": [
     "build/**"
  ],
+ "historyindex": "/index.html",
  "open": true
 }
