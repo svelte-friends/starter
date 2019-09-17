@@ -1,0 +1,25 @@
+name: Prod CI
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build production
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: [10]
+        os: [ubuntu-latest]
+    
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true
+
+      - name: build ${{matrix.node_version}}
+        run: |
+          yarn
+          yarn prod
