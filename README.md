@@ -1,10 +1,4 @@
-<p align="center">
-  <a href="https://github.com/svelte-components/starter">
-    <img alt="GitHub Actions status" src="https://github.com/svelte-components/starter/workflows/Production%20Workflow/badge.svg">
-    <img alt="GitHub Actions status" src="https://github.com/svelte-components/starter/workflows/Development%20Workflow/badge.svg">
-  </a>
-</p>
-
+![](https://github.com/svelte-components/starter/workflows/Code%20Quality/badge.svg)
 
 # Sample App - Made with :heart: and with Svelte
 
