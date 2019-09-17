@@ -1,4 +1,4 @@
-![](https://github.com/svelte-components/starter/workflows/.github/workflows/main.yml/badge.svg)
+![](https://github.com/svelte-components/starter/workflows/CI/badge.svg)
 
 
 # Sample App - Made with :heart: and with Svelte
