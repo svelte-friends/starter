@@ -34,16 +34,15 @@ jobs:
         os: [ubuntu-latest]
         
     steps:
+    - name: Use Node.js ${{ matrix.node_version }}
     - uses: actions/checkout@v1
       with:
         submodules: true
-    - name: Use Node.js ${{ matrix.node_version }}
-
+        
+    - name: test
       uses: actions/setup-node@v1
       with:
         version: ${{ matrix.node_version }}
-
-    - name: test
       run: |
         yarn
         yarn test
