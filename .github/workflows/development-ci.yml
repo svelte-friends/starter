@@ -1,4 +1,4 @@
-name: DevelopmentCI
+name: Development Workflow
 
 on:
   pull_request:

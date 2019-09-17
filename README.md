@@ -1,6 +1,9 @@
-![](https://github.com/svelte-components/starter/.github/workflows/production-ci.yml/badge.svg)
-![](https://github.com/svelte-components/starter/.github/workflows/development-ci.yml/badge.svg)
-
+<p align="center">
+  <a href="https://github.com/svelte-components/starter">
+    <img alt="GitHub Actions status" src="https://github.com/svelte-components/starter/workflows/Production%20Workflow/badge.svg">
+    <img alt="GitHub Actions status" src="https://github.com/svelte-components/starter/workflows/Development%20Workflow/badge.svg">
+  </a>
+</p>
 
 
 # Sample App - Made with :heart: and with Svelte
