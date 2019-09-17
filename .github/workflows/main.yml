@@ -6,9 +6,28 @@ on:
       - master
 
 jobs:
+  build:
+    name: Build prod
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: [10, 12]
+        os: [ubuntu-18.04]
+    
+    steps:
+      - uses: actions/checkout@v1
+        with:
+        submodules: true
+        
+      - name: build ${{matrix.node_version}}
+        run: |
+          yarn
+          yarn prod
+
   test:
     name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
+    needs: build
     strategy:
       matrix:
         node_version: [10, 12]
@@ -19,12 +38,10 @@ jobs:
       with:
         submodules: true
     - name: Use Node.js ${{ matrix.node_version }}
+
       uses: actions/setup-node@v1
       with:
         version: ${{ matrix.node_version }}
 
     - name: test
-      run: |
-        yarn install
-        yarn prod
-        yarn test
+      run: yarn test
