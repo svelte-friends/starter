@@ -1,28 +1,28 @@
-name: CI
+name: Development Workflow
 
 on:
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   build:
-    name: Build prod
+    name: Build development
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node_version: [10, 12]
-        os: [ubuntu-18.04, windows-latest]
+        node_version: [10]
+        os: [ubuntu-latest]
     
     steps:
       - uses: actions/checkout@v1
         with:
           submodules: true
 
-      - name: build ${{matrix.node_version}}
+      - name: build
         run: |
           yarn
-          yarn prod
+          yarn dev
 
   test:
     name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
@@ -30,8 +30,8 @@ jobs:
     needs: build
     strategy:
       matrix:
-        node_version: [10, 12]
-        os: [ubuntu-18.04, windows-latest]
+        node_version: [10]
+        os: [ubuntu-latest]
         
     steps:
     - uses: actions/checkout@v1
