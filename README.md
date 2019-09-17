@@ -1,4 +1,3 @@
-![](https://github.com/svelte-components/starter/workflows/Prod%20CI/badge.svg)
 ![](https://github.com/svelte-components/starter/workflows/Dev%20CI/badge.svg)
 
 
