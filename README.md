@@ -1,5 +1,5 @@
-![](https://github.com/svelte-components/starter/workflows/.github/workflows/production-ci.yml/badge.svg)
-![](https://github.com/svelte-components/starter/workflows/.github/workflows/development-ci.yml/badge.svg)
+![](https://github.com/svelte-components/starter/.github/workflows/production-ci.yml/badge.svg)
+![](https://github.com/svelte-components/starter/.github/workflows/development-ci.yml/badge.svg)
 
 
 
