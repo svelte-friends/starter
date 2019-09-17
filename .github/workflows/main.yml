@@ -44,4 +44,5 @@ jobs:
         version: ${{ matrix.node_version }}
 
     - name: test
-      run: yarn test
+      run: |
+        yarn test
