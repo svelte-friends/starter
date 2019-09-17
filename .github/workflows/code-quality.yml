@@ -1,0 +1,26 @@
+name: Code Quality
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: [10]
+        os: [ubuntu-latest]
+        
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true     
+      
+      - uses: actions/setup-node@v1
+        with:
+          version: 10
+      - name: Tests
+        run: |
+          yarn
+          yarn test
