@@ -1,4 +1,4 @@
-name: Development Workflow
+name: Development
 
 on:
   push:
@@ -23,26 +23,3 @@ jobs:
         run: |
           yarn
           yarn dev
-
-  test:
-    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    needs: build
-    strategy:
-      matrix:
-        node_version: [10]
-        os: [ubuntu-latest]
-        
-    steps:
-    - name: Use Node.js ${{ matrix.node_version }}
-    - uses: actions/checkout@v1
-      with:
-        submodules: true
-        
-    - name: test
-      uses: actions/setup-node@v1
-      with:
-        version: ${{ matrix.node_version }}
-      run: |
-        yarn
-        yarn test
