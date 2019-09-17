@@ -1,9 +1,10 @@
-name: ProductionCI
+name: Production
 
 on:
   pull_request:
     branches:
       - master
+    types: [closed]
 
 jobs:
   build:
