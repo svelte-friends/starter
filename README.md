@@ -19,6 +19,10 @@ Achivements
 Run `git clone <repo_url> --recurse-submodules` command.<br/>
 Please,  **pay attention**  to the recurse tag, because this is responsible to clone the submodules.
 
+### Update submodules
+
+Run `git submodule update` command.
+
 ### Run the project
 
 After enter inside of the project folder with `cd starter` command, run the `yarn` or `npm install` command.<br/>
