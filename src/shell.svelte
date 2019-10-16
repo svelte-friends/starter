@@ -10,7 +10,7 @@
   let content;
 
   const routes = {
-    '/': Home,
+    '/:name?': Home,
     '/about': About,
   };
 

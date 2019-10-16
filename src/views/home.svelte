@@ -1,6 +1,6 @@
 <script>
   import Button from "@packages/shared/button.svelte";
-  export let name;
+  export let params = {};
 </script>
 
 <style>
@@ -14,7 +14,7 @@
 </style>
 
 <div class="container">
-  <h1>Welcome {name} Skywallker!</h1>
+  <h1>Welcome {params.name || 'Unknown'} Skywallker!</h1>
   <Button/>
   <img
     width="50%"

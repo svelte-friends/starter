@@ -1,5 +1,6 @@
 <script>
   import svelte from "svelte";
+  import { link } from "svelte-spa-router";
   // Items on the left
   export let leftItems = [];
   // items on the right
@@ -54,7 +55,7 @@
         <li class="item">
         <!-- Give to developer a change to change the Template -->
           <slot name="left" {item}>
-            <a class="default" href={item.path}>{item.text}</a>
+            <a class="default" href={item.path} use:link>{item.text}</a>
           </slot>
         </li>
       {/each}
@@ -66,7 +67,7 @@
         <li class="item">
         <!-- Give to developer a change to change the Template -->
           <slot name="right" {item}>
-            <a class="default" href={item.path}>{item.text}</a>
+            <a class="default" href={item.path} use:link>{item.text}</a>
           </slot>
         </li>
       {/each}
