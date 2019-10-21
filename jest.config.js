@@ -1,15 +1,15 @@
 module.exports = {
-	transform: {
-		'^.+\\.js$': 'babel-jest',
-		'^.+\\.svelte$': 'jest-transform-svelte'
-	},
-	moduleFileExtensions: ['js', 'svelte'],
-	Include:"",
-	bail: false,
-	verbose: true,
-	testRegex: "\\.(spec|test).(ts|tsx|js)$",
-	setupFilesAfterEnv: [
-		'@testing-library/svelte/cleanup-after-each',
-		// ... other setup files ...
-	],
-};
+    testPathIgnorePatterns: ['/node_modules/', '/cypress/'],
+    transform: {
+      '^.+\\.svelte$': 'svelte-test/transform',
+      '^.+\\.js$': 'babel-jest',
+    },
+    globals: {
+      svelte: {
+        
+        compilerOptions: {
+          accessors: true,
+        },
+      },
+    },
+  };
